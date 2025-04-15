@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editor's Brand</title>
+  <style>
+
+header img{
+border-radius: 100px;
+float: left;
+height: 130px;
+width: 180px;
+
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+     /* body{
+background-image: url(d0645a0ce8178eea07e699158cc4f7d0.jpg);
+    }  */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #34495e;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #1abc9c;
+      border-radius: 4px;
+    }
+    .hero {
+      background: url('editor-hero.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+color: black;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: black;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+      text-shadow:15px #333;
+      margin: 1rem;
+      padding: 1rem;
+      width: 300px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .product-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    .product-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .product-card button {
+      background-color: #1abc9c;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .product-card button:hover {
+      background-color: #16a085;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Capture1.png" alt="">
+    <h1>Editor's Brand</h1>
+    <p>Your one-stop shop for premium code editors</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Editors</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Discover the Perfect Editor</h1>
+    <p>Browse our curated selection of top-tier code editors tailored for developers of all levels.</p>
+    <p>Custom thumbnails for YouTube, social media, and more.</p>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="85c604a54b33c55f67c71254c4b474b3.jpg" alt="Editor 1">
+      <h3>Abrar Maniyar</h3>
+      <p>Experience seamless coding with intelligent autocomplete and real-time collaboration.</p>
+      <h5>100$ per video</h5>
+      <button id="btn" type="submit">Buy Now</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="85c604a54b33c55f67c71254c4b474b34.jpg" alt="Editor 2">
+      <h3>Hassan Mirza</h3>
+      <p>Enhance your development workflow with customizable themes and extensions.</p>
+      <h5>100$ per video</h5>
+      <button id="btn" type="submit">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="58364b97bba4c044562b44d6df4010ae.jpg" alt="Editor 2">
+      <h3>Farhan Mirza</h3>
+      <p>Enhance your development workflow with customizable themes and extensions.</p>
+      <h5>100$ per video</h5>
+      <button id="btn" type="submit">Buy Now</button>
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Editor's Brand. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("btn").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting Editor's Brand! We'll get back to you shortly.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor's Brand</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1f1f1f;
+      color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #121212;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffc3;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #2a2a2a;
+    }
+
+    .services {
+      padding: 40px 20px;
+      background: #1f1f1f;
+      text-align: center;
+    }
+
+    .service-box {
+      margin: 20px auto;
+      padding: 20px;
+      background: #333;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .about, .contact {
+      padding: 40px 20px;
+      background: #2a2a2a;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00ffc3;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00bfa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #121212;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="Capture1.png" alt="Editor's Brand Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Editor's Brand</h1>
+    <p>Edit your thumbnails, videos, and logos with us</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <h3>Thumbnail Editing</h3>
+      <p>Custom thumbnails for YouTube, social media, and more.</p>
+    </div>
+    <div class="service-box">
+      <h3>Video Editing</h3>
+      <p>Professional video edits for any purpose.</p>
+    </div>
+    <div class="service-box">
+      <h3>Logo Design</h3>
+      <p>Creative logos tailored to your brand identity.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Editor's Brand is dedicated to providing creative editing services that bring your vision to life.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Editor's Brand. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting Editor's Brand! We'll get back to you shortly.");
+      this.reset();
+    });
+  </script>
+</body>
+</html> -->
