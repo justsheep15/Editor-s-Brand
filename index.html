@@ -106,6 +106,39 @@ color: black;
     .product-card button:hover {
       background-color: #16a085;
     }
+    .applying-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+      text-shadow: 15px #333;
+      margin: 1rem;
+      padding: 1rem;
+      width: 300px;
+      text-align: center;
+    }
+
+    .applying-card h2 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    #this{
+      background-color: #1abc9c;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    
     footer {
       background-color: #2c3e50;
       color: #ecf0f1;
@@ -163,6 +196,17 @@ color: black;
       <button id="btn" type="submit">Buy Now</button>
     </div>
     
+    <section class="applying">
+      <div class="applying-card">
+        <h2>Want to apply as editor for job?</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="number" placeholder="Your number" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" id="this">Send</button>
+        </form>
+      </div>
+    </section>
   </section>
 
   <footer>
