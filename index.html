@@ -199,7 +199,8 @@ color: black;
     <section class="applying">
       <div class="applying-card">
         <h2>Want to apply as editor for job?</h2>
-        <form id="contactForm">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+          <input type="hidden" name="access_key" value="ff308d1f-1167-408a-8503-4f8c4c352170">
           <input type="text" placeholder="Your Name" required>
           <input type="number" placeholder="Your number" required>
           <textarea placeholder="Your Message" required></textarea>
