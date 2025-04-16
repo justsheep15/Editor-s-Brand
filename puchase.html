@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill up</title>
+    <style>
+.products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .applying-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+            text-shadow: 15px #333;
+            margin: 1rem;
+            padding: 1rem;
+            width: 300px;
+            text-align: center;
+        }
+
+        .applying-card h2 {
+            margin: 1rem 0 0.5rem;
+        }
+
+        #this {
+            background-color: #1abc9c;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input,
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .editors{
+            text-align: center;
+            font-size: larger;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="products">
+        <section class="applying">
+            <div class="applying-card">
+              <h2>Want to book this Editor</h2>
+              <h3>Fill up this information</h3>
+              <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <input type="hidden" name="access_key" value="e03c1e7c-28c5-408f-ad50-c2d73bfab6c8">
+                <input type="text"name="Full name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="number" name="number" placeholder="Your Number" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="this">Submit</button>
+              </form>
+            </div>
+          </section>
+    </section>
+    <section class="editors">
+        <h4>After filling this information we will <br> contact you for your order</h4>
+    </section>
+</body>
+</html>
