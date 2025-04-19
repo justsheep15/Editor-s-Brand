@@ -321,6 +321,30 @@ Your content's first impression, perfected.</p>
             border-radius: 20px;
             cursor: pointer;
         }
+      #btn {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #btn:hover {
+      background: linear-gradient(135deg, #a777e3, #6e8efb);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active:active {
+      transform: scale(0.98);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
         .hero {
             display: flex;
             justify-content: space-between;
@@ -420,21 +444,25 @@ Your content's first impression, perfected.</p>
                 <img src="https://i.imgur.com/xxycEKM.jpg" alt="Highlight Reels">
                 <h3>Highlight Reels</h3>
                 <p>Crafting the best moments into cinematic highlight videos for events and brands.</p>
+              <button id="btn">View Editors</button>
             </div>
             <div class="card">
                 <img src="https://i.imgur.com/5K2uPSb.jpg" alt="YouTube Editing">
                 <h3>YouTube Editing</h3>
                 <p>High-impact edits for YouTube content creators to keep viewers engaged.</p>
+              <button>View Editors</button>
             </div>
             <div class="card">
                 <img src="https://i.imgur.com/s1zvV6I.jpg" alt="Corporate Videos">
                 <h3>Corporate Videos</h3>
                 <p>Clean, polished editing for professional training, marketing, and internal videos.</p>
+              <button id="btn">View Editors</button>
             </div>
             <div class="card">
                 <img src="https://i.imgur.com/XpQQIUI.jpg" alt="Motion Graphics">
                 <h3>Motion Graphics</h3>
                 <p>Animations and text overlays to enhance your messaging and branding.</p>
+              <button id="btn">View Editors</button>
             </div>
         </div>
     </section>
