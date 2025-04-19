@@ -1,3 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor's Brand</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #fff;
+        }
+        header {
+            background: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn {
+            background: #B4515E;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+      #btn {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #btn:hover {
+      background: linear-gradient(135deg, #a777e3, #6e8efb);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #btn:active:active {
+      transform: scale(0.98);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
+            background: #FCE9EC;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            color: #B4515E;
+        }
+        .hero-text p {
+            color: #555;
+            margin: 20px 0;
+        }
+        .hero-text .btns button {
+            margin-right: 15px;
+        }
+        .services, .why {
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .services h2, .why h2 {
+            font-size: 36px;
+            color: #333;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #B4515E;
+            margin: 10px 0;
+        }
+      .hr {
+      margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+
+    .button{
+      text-align: center;
+       justify-content: center;
+      font-size: x-large;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      
+    }
+.job{
+  text-align: center;
+   font-size: x-large;
+}
+        .why {
+            background: #E3A6AB;
+            color: white;
+        }
+        .why .details {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .why .details div {
+            max-width: 250px;
+        }
+      #pubs{
+         text-align: center;
+        colour: white;
+        background: #E3A6AB;
+        padding-top: 30px;
+       padding-bottom: 30px; 
+      }
+      .pub {
+      background-color:  #E3A6AB;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+      #pubing{
+        background-color:  #E3A6AB;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      }
+      footer {
+      background-color: pink;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Editor's Brand</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="btn">Get a Quote</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Create Stunning Videos With Ease</h1>
+            <p>At Editor's Brand, we bring your stories to life through powerful visuals and professional editing techniques. Let your content shine with our expert touch.</p>
+            <div class="btns">
+                <button id="btn" style="background:#fff; color:#B4515E; border:1px solid #B4515E;">Contact Us</button>
+                <button id="btn">About Us</button>
+            </div>
+        </div>
+        <img src="download.png" alt="Hero" style="height: 300px; border-radius: 20px;width: auto ">
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>Professional Video Editing Solutions</p>
+        <div class="service-cards">
+            <div class="card">
+                <img src="picture2.jpg" alt="Highlight Reels">
+                <h3>Reels Editing</h3>
+                <p>Crafting the best moments into cinematic highlight videos for events and brands.</p>
+              <button id="btn"><a href="editors.html">View Editors</a></button>
+            </div>
+            <div class="card">
+                <img src="picture3.jpg" alt="YouTube Editing">
+                <h3>YouTube Editing</h3>
+                <p>High-impact edits for YouTube content creators to keep viewers engaged.</p>
+              <button id="btn"><a href="editors.html">View Editors</a></button>
+            </div>
+            <div class="card">
+                <img src="picture4.jpg" alt="Corporate Videos">
+                <h3>Corporate Videos <br> Editing</h3>
+                <p>Clean, polished editing for professional training, marketing, and internal videos.</p>
+              <button id="btn"><a href="editors.html">View Editors</a></button>
+            </div>
+            <div class="card">
+                <img src="picture5.jpg" alt="Motion Graphics">
+                <h3>Motion Graphics</h3>
+                <p>Animations and text overlays to enhance your messaging and branding.</p>
+              <button id="btn"><a href="editors.html">View Editors</a></button>
+            </div>
+        </div>
+    </section>
+  
+  <div class="hr">
+    <hr>
+  </div>
+  <section class="job">
+    <h1>want to register for job?</h1>
+  </section>
+
+  <section class="button">
+    <button id="btn"><a href="login.html">Register for job</a></button>
+  </section>
+
+
+    <section class="why">
+        <h2>Why Choose Us?</h2>
+        <p>Why Editor's Brand is Your Best Choice for Video Editing</p>
+        <div class="details">
+            <div>
+                <h4>Skilled Team</h4>
+                <p>Our editors are highly trained in modern editing software and storytelling techniques to bring your ideas to life.</p>
+            </div>
+            <div>
+                <h4>Custom Solutions</h4>
+                <p>Every video is unique — we tailor our services to meet your goals and audience expectations.</p>
+            </div>
+            <div>
+                <h4>Fast Turnaround</h4>
+                <p>We understand deadlines and pride ourselves on delivering professional quality videos quickly and efficiently.</p>
+            </div>
+        </div>
+
+        <footer>
+         <p>&copy; 2025 Editor's Brand. All rights reserved.</p>
+    <h3>Published and Scripted by</h3>
+    <h1>Abrar Maniyar</h1>
+          <h3>Managing by</h3>
+    <h2>Hassan Mirza</h2>
+    <h4>Contact us on this no.</h4>
+    <h3 id="contact"> 
+      Founder: Abrar Maniyar.7719042196 <br>
+      Manager: Hassan Mirza.8007104112
+    </h3>
+        </footer>
+    
+    </section>
+
+</body>
+</html>
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -286,277 +561,4 @@ Your content's first impression, perfected.</p>
 </body>
 </html> -->
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor's Brand</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background: #fff;
-        }
-        header {
-            background: #fff;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .btn {
-            background: #B4515E;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-      #btn {
-      background: linear-gradient(135deg, #6e8efb, #a777e3);
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    #btn:hover {
-      background: linear-gradient(135deg, #a777e3, #6e8efb);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    #btn:active:active {
-      transform: scale(0.98);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 60px 40px;
-            background: #FCE9EC;
-        }
-        .hero-text {
-            max-width: 50%;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            color: #B4515E;
-        }
-        .hero-text p {
-            color: #555;
-            margin: 20px 0;
-        }
-        .hero-text .btns button {
-            margin-right: 15px;
-        }
-        .services, .why {
-            padding: 60px 40px;
-            text-align: center;
-        }
-        .services h2, .why h2 {
-            font-size: 36px;
-            color: #333;
-        }
-        .service-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-        .card {
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            width: 200px;
-            padding: 20px;
-            margin: 20px;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .card h3 {
-            color: #B4515E;
-            margin: 10px 0;
-        }
-      .hr {
-      margin-top: 50px;
-        margin-bottom: 50px;
-        
-    }
-
-    .button{
-      text-align: center;
-       justify-content: center;
-      font-size: x-large;
-      margin-top: 100px;
-      margin-bottom: 50px;
-      
-    }
-.job{
-  text-align: center;
-   font-size: x-large;
-}
-        .why {
-            background: #E3A6AB;
-            color: white;
-        }
-        .why .details {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin-top: 40px;
-            text-align: left;
-        }
-        .why .details div {
-            max-width: 250px;
-        }
-      #pubs{
-         text-align: center;
-        colour: white;
-        background: #E3A6AB;
-        padding-top: 30px;
-       padding-bottom: 30px; 
-      }
-      .pub {
-      background-color:  #E3A6AB;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-      #pubing{
-        background-color:  #E3A6AB;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      }
-      footer {
-      background-color: pink;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Editor's Brand</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-        <button class="btn">Get a Quote</button>
-    </header>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Create Stunning Videos With Ease</h1>
-            <p>At Editor's Brand, we bring your stories to life through powerful visuals and professional editing techniques. Let your content shine with our expert touch.</p>
-            <div class="btns">
-                <button id="btn" style="background:#fff; color:#B4515E; border:1px solid #B4515E;">Contact Us</button>
-                <button id="btn">About Us</button>
-            </div>
-        </div>
-        <img src="download.png" alt="Hero" style="height: 300px; border-radius: 20px;width: auto ">
-    </section>
-
-    <section class="services">
-        <h2>Our Services</h2>
-        <p>Professional Video Editing Solutions</p>
-        <div class="service-cards">
-            <div class="card">
-                <img src="picture2.jpg" alt="Highlight Reels">
-                <h3>Reels Editing</h3>
-                <p>Crafting the best moments into cinematic highlight videos for events and brands.</p>
-              <button id="btn"><a href="editors.html">View Editors</a></button>
-            </div>
-            <div class="card">
-                <img src="picture3.jpg" alt="YouTube Editing">
-                <h3>YouTube Editing</h3>
-                <p>High-impact edits for YouTube content creators to keep viewers engaged.</p>
-              <button id="btn"><a href="editors.html">View Editors</a></button>
-            </div>
-            <div class="card">
-                <img src="picture4.jpg" alt="Corporate Videos">
-                <h3>Corporate Videos <br> Editing</h3>
-                <p>Clean, polished editing for professional training, marketing, and internal videos.</p>
-              <button id="btn"><a href="editors.html">View Editors</a></button>
-            </div>
-            <div class="card">
-                <img src="picture5.jpg" alt="Motion Graphics">
-                <h3>Motion Graphics</h3>
-                <p>Animations and text overlays to enhance your messaging and branding.</p>
-              <button id="btn"><a href="editors.html">View Editors</a></button>
-            </div>
-        </div>
-    </section>
-  
-  <div class="hr">
-    <hr>
-  </div>
-  <section class="job">
-    <h1>want to register for job?</h1>
-  </section>
-
-  <section class="button">
-    <button id="btn"><a href="login.html">Register for job</a></button>
-  </section>
-
-
-    <section class="why">
-        <h2>Why Choose Us?</h2>
-        <p>Why Editor's Brand is Your Best Choice for Video Editing</p>
-        <div class="details">
-            <div>
-                <h4>Skilled Team</h4>
-                <p>Our editors are highly trained in modern editing software and storytelling techniques to bring your ideas to life.</p>
-            </div>
-            <div>
-                <h4>Custom Solutions</h4>
-                <p>Every video is unique — we tailor our services to meet your goals and audience expectations.</p>
-            </div>
-            <div>
-                <h4>Fast Turnaround</h4>
-                <p>We understand deadlines and pride ourselves on delivering professional quality videos quickly and efficiently.</p>
-            </div>
-        </div>
-
-        <footer>
-         <p>&copy; 2025 Editor's Brand. All rights reserved.</p>
-    <h3>Published and Scripted by</h3>
-    <h1>Abrar Maniyar</h1>
-          <h3>Managing by</h3>
-    <h2>Hassan Mirza</h2>
-    <h4>Contact us on this no.</h4>
-    <h3 id="contact"> 
-      Founder: Abrar Maniyar.7719042196 <br>
-      Manager: Hassan Mirza.8007104112
-    </h3>
-        </footer>
-    
-    </section>
-
-</body>
-</html>
+ 
